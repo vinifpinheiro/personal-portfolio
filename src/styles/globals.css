@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+
+@layer base {
+  body {
+    background-color: #131223;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+}
+
+.header-name {
+  font-family: "Roboto Slab", serif;
+}
+
+@layer components {
+  .milkblur-strong {
+    @apply backdrop-blur-[200px] backdrop-filter;
+  }
+  .milkblur {
+    @apply backdrop-blur-[80px] backdrop-filter;
+  }
+  .milkblur-mid {
+    @apply backdrop-blur-[15px] backdrop-filter;
+  }
+  .milkblur-light {
+    @apply backdrop-blur-[5px] backdrop-filter;
+  }
+}
