@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import classNames from "classnames";
 
 export default function Header() {
-  const [active, setActive] = useState(false);
   const router = useRouter();
 
   interface Content {
@@ -48,7 +46,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="milkblur fixed h-[80px] w-full bg-black/20 border-b border-white/10">
+    <header className="milkblur fixed h-[80px] w-full bg-black/20 border-b border-white/10 top-0 left-0">
       <div className="flex h-full w-full items-center">
         <div className="flex w-1/2 items-center justify-center ">
           <h1 className="header-name text-trasnparent text-3xl font-bold">
@@ -67,7 +65,7 @@ export default function Header() {
                   className={classNames(
                     "text-white",
                     item.active &&
-                      "bg-gradient-to-br from-rose-500 to-blue-800 bg-clip-text text-transparent"
+                      "bg-gradient-to-br from-rose-500 to-blue-800 bg-clip-text !text-transparent"
                   )}
                 >
                   {item.title}
