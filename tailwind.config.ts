@@ -17,7 +17,11 @@ module.exports = {
       },
     },
     extend: {
-      
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+        "spin-slow2": "spin 9s linear infinite",
+        "spin-slow3": "spin 19s linear infinite",
+      },
     },
     colors: {
       transparent: "transparent",
