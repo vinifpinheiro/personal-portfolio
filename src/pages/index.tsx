@@ -10,8 +10,8 @@ const Home: NextPage = () => {
         <title>Vinicius | Portfolio</title>
       </Head>
       <main className="mx-auto mt-40 w-full max-w-[950px]">
-        <div className="flex flex-col items-start justify-center ">
-          <div className="flex">
+        <div className="flex flex-col items-start justify-center w-full">
+          <div className="flex justify- w-full">
             <Introdution />
             <ImageSocials />
           </div>

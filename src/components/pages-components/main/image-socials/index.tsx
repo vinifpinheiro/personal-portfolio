@@ -1,7 +1,9 @@
+import SocialButtons from "./social-buttons";
+
 export default function ImageSocials() {
   return (
-    <>
-      He
-    </>
+    <div className="w-full h-full ">
+      <SocialButtons />
+    </div>
   )
 }
